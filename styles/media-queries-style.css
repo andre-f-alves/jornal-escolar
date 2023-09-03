@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@media  screen and (min-width: 600px) {
+  .title-box {
+    max-width: 300px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+  }
+
+  .info {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row;
+  }
+
+  .info {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-list {
+    position: relative;
+    top: 0;
+    transform: none;
+    flex-direction: row;
+    height: max-content;
+  }
+
+  .nav-list a {
+    font-size: 1.1em;
+  }
+
+  section {
+    max-width: 950px;
+  }
+}
