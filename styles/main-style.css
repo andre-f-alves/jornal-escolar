@@ -16,11 +16,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: var(--default-font);
 }
 
-body {
+html {
   overflow-x: hidden;
+}
+
+html, body {
+  width: 100vw;
 }
 
 header {
@@ -135,6 +140,7 @@ main {
 
 section {
   width: 85vw;
+  min-height: 100vh;
   padding: 15px;
   margin: 10px 0;
 }
@@ -155,6 +161,8 @@ footer, .info {
 }
 
 footer {
+  position: relative;
+  bottom: 0;
   height: max-content;
   padding: 20px;
   font-size: .7em;
