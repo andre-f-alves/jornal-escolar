@@ -1,24 +1,40 @@
 const menuIcon = document.querySelector('.menu-icon')
 const navList = document.querySelector('.nav-list')
 const navLinks = document.querySelectorAll('.nav-list a')
-const htmlSections = document.querySelectorAll('section')
+const sections = document.querySelectorAll('section')
 
-const sections = [ ...htmlSections ].map(section => ({ [section.getAttribute('id')]: section.offsetTop }))
-
+const sectionsArray = [ ...sections ]
 const linksArray = [ ...navLinks ]
 
-linksArray.forEach((link, index)=> {
+const sectionProps = {}
+sectionsArray.forEach(section => {
+  sectionProps[section.getAttribute('id')] = {
+    top: section.offsetTop,
+    height: section.offsetHeight
+  }
+})
+
+linksArray.forEach(link => {
   link.addEventListener('click', event => {
     event.preventDefault()
-
-    const elementId = event.target.getAttribute('href').substring(1)
+    
+    const href = event.target.getAttribute('href').substring(1)
+    
     scrollTo({
-      top: sections[index][elementId] - 20,
+      top: sectionProps[href].top - 20,
       behavior: 'smooth'
     })
   })
 })
 
 menuIcon.addEventListener('click', () => {
+  menuIcon.classList.toggle('active')
   navList.classList.toggle('active')
 })
+
+onresize = () => {
+  if (innerWidth >= 992 && navList.classList.contains('active')) {
+    menuIcon.classList.remove('active')
+    navList.classList.remove('active')
+  }
+}

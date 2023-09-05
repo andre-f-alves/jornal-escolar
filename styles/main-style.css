@@ -16,19 +16,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
   font-family: var(--default-font);
 }
 
-html {
-  overflow-x: hidden;
-}
-
 html, body {
-  width: 100vw;
+  overflow-x: clip;
 }
 
 header {
+  position: -webkit-sticky;
   position: sticky;
   z-index: 1;
   top: 0;
@@ -38,7 +34,7 @@ header {
 }
 
 .header-content-box {
-  position: sticky;
+  position: relative;
   top: 20px;
   display: flex;
   flex-direction: row;
@@ -78,6 +74,7 @@ header h1 {
 .menu-icon {
   padding: 6px 9px;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .menu-icon div {
@@ -85,6 +82,27 @@ header h1 {
   height: 2px;
   margin: 5px 0px;
   background-color: black;
+  transition: 0.3s;
+}
+
+.menu-icon.active {
+  background-color: black;
+}
+
+.menu-icon.active div {
+  background-color: white;
+}
+
+.menu-icon.active .line1 {
+  transform: translateY(350%) rotate(45deg);
+}
+
+.menu-icon.active .line2 {
+  opacity: 0;
+}
+
+.menu-icon.active .line3 {
+  transform: translateY(-350%) rotate(-45deg);
 }
 
 .nav-list {
@@ -116,6 +134,11 @@ header h1 {
   font-size: 1em;
 }
 
+.nav-list a:focus {
+  border-bottom: 2px solid var(--blue1);
+  color: var(--blue1);
+}
+
 @media (hover: hover) and (pointer: fine) {
   .menu-icon:hover {
     outline: 1px solid black;
@@ -130,7 +153,6 @@ header h1 {
 
 main {
   position: relative;
-  z-index: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
