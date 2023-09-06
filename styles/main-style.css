@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz@6..72&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz@6..72&family=Prata&display=swap');
 
 :root {
@@ -134,7 +132,7 @@ header h1 {
   font-size: 1em;
 }
 
-.nav-list a:focus {
+.nav-list a.active {
   border-bottom: 2px solid var(--blue1);
   color: var(--blue1);
 }

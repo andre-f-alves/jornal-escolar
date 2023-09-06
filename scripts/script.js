@@ -32,6 +32,23 @@ menuIcon.addEventListener('click', () => {
   navList.classList.toggle('active')
 })
 
+onscroll = () => {
+  const offsetY = scrollY
+
+  Object.entries(sectionProps).forEach(section => {
+    let { top, height } = section[1]
+    top -= 25
+    
+    if (offsetY >= top && offsetY < height + top) {
+      linksArray.forEach(link => {
+        link.classList.remove('active')
+        document.querySelector(`.nav-list a[href$=${section[0]}]`).classList.add('active')
+      })
+      
+    }
+  })
+}
+
 onresize = () => {
   if (innerWidth >= 992 && navList.classList.contains('active')) {
     menuIcon.classList.remove('active')
