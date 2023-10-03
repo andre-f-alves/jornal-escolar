@@ -23,6 +23,10 @@
   .info {
     width: 60%;
   }
+
+  .additional {
+    width: 40%;
+  }
 }
 
 @media screen and (min-width: 992px) {

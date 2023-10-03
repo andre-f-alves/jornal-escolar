@@ -10,6 +10,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles/main-style.css">
   <link rel="stylesheet" href="styles/media-queries-style.css">
+  <link rel="stylesheet" href="styles/sudoku-style.css">
 </head>
 
 <body>
@@ -72,10 +73,12 @@
 
     <section id="games">
       <h2>Jogos</h2>
-      <article>
-        <h3>Tema</h3>
 
-      </article>
+      <div class="sudoku-box">
+        <h3>Sudoku</h3>
+        <table class="board"></table>
+      </div>
+      
     </section>
   </main>
 
@@ -99,6 +102,7 @@
   </footer>
 
   <script src="scripts/script.js"></script>
+  <script src="scripts/sudoku-game.js"></script>
 </body>
 
 </html>
