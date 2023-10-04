@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 @media  screen and (min-width: 600px) {
+  .sudoku-board-box::-webkit-scrollbar {
+    display: none;
+  }
+
   .title-box {
     max-width: 300px;
   }

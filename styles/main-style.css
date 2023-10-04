@@ -185,6 +185,11 @@ section .sudoku-box {
   font-size: 1.2em;
 }
 
+.sudoku-board-box {
+  width: 100%;
+  overflow-x: scroll;
+}
+
 footer, .info {
   display: flex;
   flex-direction: column;
