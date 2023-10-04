@@ -68,7 +68,7 @@ function checkValue(inputElement) {
 }
 
 function isValid(value) {
-  return /^[0-9]$/.test(value)
+  return /^[1-9]$/.test(value)
 }
 
 function isUniqueInRow(row, value, currentCol) {
