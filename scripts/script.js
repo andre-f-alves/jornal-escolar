@@ -55,3 +55,13 @@ onresize = () => {
     navList.classList.remove('active')
   }
 }
+
+if (innerWidth <= 992) {
+  onclick = event => {
+    const navChildrens = [ ...document.querySelector('nav').childNodes ]
+    if (!navChildrens.includes(event.target) && navList.classList.contains('active')) {
+      menuIcon.classList.remove('active')
+      navList.classList.remove('active')
+    }
+  }
+}

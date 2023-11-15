@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.board {
+.sudoku-board {
   width: max-content;
   border-collapse: collapse;
   border: 2px solid black;

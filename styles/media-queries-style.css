@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @media  screen and (min-width: 600px) {
-  .sudoku-board-box::-webkit-scrollbar {
+  .sudoku-box::-webkit-scrollbar {
     display: none;
   }
 
@@ -20,6 +20,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .crosswords-area iframe {
+    height: 200vh;
+  }
+
   footer {
     flex-direction: row;
   }

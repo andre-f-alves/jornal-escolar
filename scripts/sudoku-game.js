@@ -1,5 +1,5 @@
 (function createBoard() {
-  const board = document.querySelector('.board')
+  const board = document.querySelector('.sudoku-board')
 
   for (let i = 0; i < 9; i++) {
     const row = document.createElement('tr')
