@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles/main-style.css">
   <link rel="stylesheet" href="styles/media-queries-style.css">
   <link rel="stylesheet" href="styles/sudoku-style.css">
+  <link rel="stylesheet" href="styles/print-style.css">
 </head>
 
 <body>
@@ -28,10 +29,10 @@
         </div>
 
         <ul class="nav-list">
-          <li><a href="#reports">Reportagens</a></li>
-          <li><a href="#literature">Literatura</a></li>
-          <li><a href="#games-world">Mundo dos Games</a></li>
-          <li><a href="#comics">HQs</a></li>
+          <!-- <li><a href="#reports">Reportagens</a></li> -->
+          <!-- <li><a href="#literature">Literatura</a></li> -->
+          <!-- <li><a href="#games-world">Mundo dos Games</a></li> -->
+          <!-- <li><a href="#comics">HQs</a></li> -->
           <li><a href="#games">Jogos</a></li>
         </ul>
       </nav>
@@ -39,60 +40,72 @@
   </header>
 
   <main>
-    <section id="reports">
+    <!-- <section id="reports">
       <h2>Reportagens</h2>
       <article>
         <h3>Tema</h3>
 
       </article>
-    </section>
+    </section> -->
 
-    <section id="literature">
+    <!-- <section id="literature">
       <h2>Literatura</h2>
       <article>
         <h3>Tema</h3>
 
       </article>
-    </section>
+    </section> -->
 
-    <section id="games-world">
+    <!-- <section id="games-world">
       <h2>Mundo dos Games</h2>
       <article>
         <h3>Tema</h3>
 
       </article>
-    </section>
+    </section> -->
 
-    <section id="comics">
+    <!-- <section id="comics">
       <h2>HQs</h2>
       <article>
         <h3>Tema</h3>
 
       </article>
-    </section>
+    </section> -->
 
     <section id="games">
       <h2>Jogos</h2>
 
-      <div class="sudoku-area">
-        <h3>Sudoku</h3>
-        <div class="sudoku-box">
-          <table class="sudoku-board"></table>
+      <article>
+        <div class="sudoku-area">
+          <h3>Sudoku</h3>
+          <div class="sudoku-box">
+            <table class="sudoku-board"></table>
+          </div>
         </div>
-      </div>
 
-      <div class="crosswords-area">
-        <h3>Palavras Cruzadas - Cálculos</h3>
-        <iframe
-          src="https://www.educolorir.com/crosswords/clculos_matemticos-3f8ab0c680e79611b6b2cff9b007cdc0/embed"
-          title="Palavras Cruzadas - Cálculos"
-          frameborder="0"
-          marginheight="0"
-          merginwidth="0"
-        >
-          <a href="https://www.educolorir.com/crosswords/clculos_matemticos-3f8ab0c680e79611b6b2cff9b007cdc0/embed" target="_blank"></a>
-        </iframe>
-      </div>
+        <div class="division-line"></div>
+
+        <div class="crosswords-area">
+          <h3>Palavras Cruzadas</h3>
+          <p>Efetue os cálculos e preencha o tabuleiro com os resultados por extenso.</p>
+
+          <div class="crosswords-print-box">
+            <img src="imgs/crosswords-board.png" alt="Tabuleiro de Palavras Cruzadas" class="crosswords-board">
+            <img src="imgs/vertical-questions.png" alt="Verticais" class="vertical">
+            <img src="imgs/horizontal-questions.png" alt="Horizontais" class="horizontal">
+          </div>
+        
+          <iframe
+            src="https://www.educolorir.com/crosswords/clculos_matemticos-3f8ab0c680e79611b6b2cff9b007cdc0/embed"
+            title="Palavras Cruzadas - Cálculos"
+            frameborder="0"
+            marginheight="0"
+            merginwidth="0"
+          >
+            <a href="https://www.educolorir.com/crosswords/clculos_matemticos-3f8ab0c680e79611b6b2cff9b007cdc0/embed" target="_blank"></a>
+          </iframe>
+        </div>
+      </article>
 
     </section>
   </main>

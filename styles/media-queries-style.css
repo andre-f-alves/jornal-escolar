@@ -20,10 +20,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .crosswords-area iframe {
-    height: 200vh;
-  }
-
   footer {
     flex-direction: row;
   }

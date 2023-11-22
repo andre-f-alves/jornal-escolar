@@ -44,7 +44,6 @@ onscroll = () => {
         link.classList.remove('active')
         document.querySelector(`.nav-list a[href$=${section[0]}]`).classList.add('active')
       })
-      
     }
   })
 }
