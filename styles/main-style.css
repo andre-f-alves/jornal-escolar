@@ -45,26 +45,29 @@ header {
 .title-box {
   position: relative;
   z-index: 1;
-  top: -5px;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 60vw;
-  max-width: 260px;
-  height: 100px;
-  padding: 7px;
+  max-width: 300px;
+  height: 110px;
+  padding: 5px;
   background-color:  var(--blue1);
   color: black;
   box-shadow: 0px 2px 7px 1px #00000041;
 }
 
 header h1 {
-  padding: 7px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   font-family: var(--title-font);
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 1.7em;
   text-align: center;
   letter-spacing: 2px;
 }
@@ -173,17 +176,54 @@ section h2 {
 }
 
 section h3 {
-  margin: 15px 0px;
+  margin: 20px 0px;
   font-size: 1.2em;
 }
 
-section .sudoku-area,
-section .crosswords-area {
+section h4 {
+  font-size: 1.1em;
+}
+
+section article {
+  padding: 0px 10px;
+}
+
+section p {
+  margin: 20px 0px;
+  font-size: 1em;
+  text-indent: 2em;
+  text-align: justify;
+  line-height: 1.6em;
+}
+
+section#literature .introduction,
+.author-s_biography {
+  margin-bottom: 40px;
+}
+
+.introduction img.the-little-prince {
+  float: right;
+  margin: 10px;
+}
+
+section#games-world img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50vw;
+}
+
+section#games .sudoku-area,
+.crosswords-area {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+}
+
+section#games .statement {
+  text-indent: 0;
 }
 
 .sudoku-box {
@@ -221,7 +261,7 @@ footer {
   bottom: 0;
   height: max-content;
   padding: 20px;
-  font-size: .7em;
+  font-size: .8em;
   background-color: var(--gray1);
 }
 
@@ -233,8 +273,9 @@ footer {
 .additional {
   align-self: flex-end;
   text-align: right;
+  padding: 20px 0px;
 }
 
 .additional p {
-  padding: 5px 10px;
+  padding: 10px;
 }
