@@ -162,8 +162,8 @@ main {
 }
 
 section {
-  width: 85vw;
-  padding: 15px;
+  width: 90vw;
+  padding: 10px;
   margin: 10px 0;
 }
 
@@ -202,15 +202,15 @@ section#literature .introduction,
 }
 
 .introduction img.the-little-prince {
-  float: right;
-  margin: 10px;
+  width: 100%;
+  margin: auto;
 }
 
 section#games-world img {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  width: 50vw;
+  width: 100%;
 }
 
 section#games .sudoku-area,
@@ -254,6 +254,7 @@ footer, .info {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  line-height: 1.5em;
 }
 
 footer {
