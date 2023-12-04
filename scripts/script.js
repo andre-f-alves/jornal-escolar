@@ -21,7 +21,7 @@ linksArray.forEach(link => {
     const href = event.target.getAttribute('href').substring(1)
     
     scrollTo({
-      top: sectionProps[href].top - 20,
+      top: sectionProps[href].top - 25,
       behavior: 'smooth'
     })
   })
