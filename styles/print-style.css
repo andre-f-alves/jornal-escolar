@@ -73,6 +73,7 @@
 
   section {
     width: 100%;
+    border-bottom: 3px solid black;
   }
 
   section h2 {
@@ -101,26 +102,27 @@
     margin-top: 20px;
   }
 
-  section#literature {
-    margin-top: 260px;
+  section#reports {
+    padding-bottom: 270px;
   }
 
-  section#games-world,
+  section#literature,
+  section#games-world {
+    padding-bottom: 100px;
+  }
+
+  section#games-world .the-game-awards,
+  section#games-world .marvel-s_spider-man-2 {
+    margin-bottom: 400px;
+  }
+
   section#games {
-    margin-top: 100px;
-  }
-
-  section#games-world .marvel-s_spider-man-2,
-  section#games-world .fifa-championship {
-    margin-top: 400px;
-  }
-
-  section#games .crosswords {
-    margin-top: 500px;
+    padding-bottom: 330px;
   }
 
   .division-line {
-    display: none;
+    margin: 0 auto;
+    margin-top: 500px;
   }
 
   .sudoku-box {
