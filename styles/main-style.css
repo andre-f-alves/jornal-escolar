@@ -241,10 +241,6 @@ section#games .statement {
   background-color: black;
 }
 
-.crosswords-print-box {
-  display: none;
-}
-
 .crosswords iframe {
   width: 100%;
   height: 100vh;
