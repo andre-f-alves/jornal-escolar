@@ -16,6 +16,13 @@
 }
 
 @media screen and (min-width: 768px) {
+  section#reports .videos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+  }
+
   section#literature img.the-little-prince {
     float: right;
     width: 60%;
