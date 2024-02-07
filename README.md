@@ -1,2 +1,2 @@
 # jornal-escolar
-Jornal informativo criado para o projeto de culminância do Itinerário Formativo do Ensino Médio
+Jornal digital criado para o projeto de culminância do Itinerário Formativo do Ensino Médio.
